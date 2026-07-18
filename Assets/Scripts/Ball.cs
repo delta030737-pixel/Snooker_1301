@@ -13,10 +13,15 @@ public enum BallColor
 public class Ball : MonoBehaviour
 {
     [SerializeField]
-    private int point;
+    private int point = 0;
     
     [SerializeField]
     private BallColor color;
+
+    void OnValidate()
+    {
+        point = (int)color;
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
