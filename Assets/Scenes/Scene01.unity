@@ -279,7 +279,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 316880699}
-  - component: {fileID: 316880700}
   m_Layer: 0
   m_Name: poseBlue
   m_TagString: Untagged
@@ -302,21 +301,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 297500870}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &316880700
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 316880698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b57f7bc6aadcde488ff441aeba2137f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  playerScore: 0
-  ballPosition: []
-  ballPrefab: {fileID: 0}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -717,7 +701,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 385056457}
-  - component: {fileID: 385056458}
   m_Layer: 0
   m_Name: posePink
   m_TagString: Untagged
@@ -740,21 +723,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 297500870}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &385056458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 385056456}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b57f7bc6aadcde488ff441aeba2137f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  playerScore: 0
-  ballPosition: []
-  ballPrefab: {fileID: 0}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -891,7 +859,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 543515154}
-  - component: {fileID: 543515155}
   m_Layer: 0
   m_Name: poseGreen
   m_TagString: Untagged
@@ -914,21 +881,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 297500870}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &543515155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 543515153}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b57f7bc6aadcde488ff441aeba2137f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  playerScore: 0
-  ballPosition: []
-  ballPrefab: {fileID: 0}
 --- !u!1 &641525147
 GameObject:
   m_ObjectHideFlags: 0
@@ -938,7 +890,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 641525148}
-  - component: {fileID: 641525149}
   m_Layer: 0
   m_Name: poseRed
   m_TagString: Untagged
@@ -961,21 +912,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 297500870}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &641525149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 641525147}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b57f7bc6aadcde488ff441aeba2137f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  playerScore: 0
-  ballPosition: []
-  ballPrefab: {fileID: 0}
 --- !u!1 &762138091
 GameObject:
   m_ObjectHideFlags: 0
@@ -985,7 +921,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 762138092}
-  - component: {fileID: 762138093}
   m_Layer: 0
   m_Name: poseYellow
   m_TagString: Untagged
@@ -1008,21 +943,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 297500870}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &762138093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 762138091}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b57f7bc6aadcde488ff441aeba2137f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  playerScore: 0
-  ballPosition: []
-  ballPrefab: {fileID: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1160,7 +1080,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1065877561}
-  - component: {fileID: 1065877562}
   m_Layer: 0
   m_Name: poseBlack
   m_TagString: Untagged
@@ -1183,21 +1102,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 297500870}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1065877562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1065877560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b57f7bc6aadcde488ff441aeba2137f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  playerScore: 0
-  ballPosition: []
-  ballPrefab: {fileID: 0}
 --- !u!1 &1272278081
 GameObject:
   m_ObjectHideFlags: 0
@@ -1486,7 +1390,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1595088908}
-  - component: {fileID: 1595088909}
   m_Layer: 0
   m_Name: poseBrown
   m_TagString: Untagged
@@ -1509,21 +1412,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 297500870}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1595088909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1595088907}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b57f7bc6aadcde488ff441aeba2137f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  playerScore: 0
-  ballPosition: []
-  ballPrefab: {fileID: 0}
 --- !u!1 &1625922095
 GameObject:
   m_ObjectHideFlags: 0
@@ -1533,7 +1421,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1625922096}
-  - component: {fileID: 1625922097}
   m_Layer: 0
   m_Name: poseWhite
   m_TagString: Untagged
@@ -1556,21 +1443,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 297500870}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1625922097
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1625922095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b57f7bc6aadcde488ff441aeba2137f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  playerScore: 0
-  ballPosition: []
-  ballPrefab: {fileID: 0}
 --- !u!1 &1794829896
 GameObject:
   m_ObjectHideFlags: 0
@@ -1763,7 +1635,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1926027875
