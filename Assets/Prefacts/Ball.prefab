@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 125211546030459734}
   - component: {fileID: 1746110316239848268}
   - component: {fileID: 2217578469460574269}
+  - component: {fileID: 8690220052206390187}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -68,7 +69,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: b20d56dc1482774409e8b288f018f28a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -127,3 +128,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Ball
   point: 0
   color: 0
+  materials:
+  - {fileID: 2100000, guid: b20d56dc1482774409e8b288f018f28a, type: 2}
+  - {fileID: 2100000, guid: 2afa107672f6dce478194e66c9581fcd, type: 2}
+  - {fileID: 2100000, guid: 47eb2399f0101f443a4416b92a24f578, type: 2}
+  - {fileID: 2100000, guid: 7334d9efbd1221e41ace6b95a8ac0186, type: 2}
+  - {fileID: 2100000, guid: 2390e0e6f363a3240a95bb25fb343118, type: 2}
+  - {fileID: 2100000, guid: a495c642057d1a441bf1594c72c930f3, type: 2}
+  - {fileID: 2100000, guid: 3270cdeefcce33b42a3c923efb2518cb, type: 2}
+  - {fileID: 2100000, guid: a5bcd2bd8f785d342aabe3cd1ce6bee6, type: 2}
+--- !u!54 &8690220052206390187
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31222300488490126}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

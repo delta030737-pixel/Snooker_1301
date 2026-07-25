@@ -20,6 +20,10 @@ public class Ball : MonoBehaviour, IPointerClickHandler
     [SerializeField]
     private BallColor color;
 
+    [SerializeField]
+    private Material[] materials = new Material[8];
+    private MeshRenderer meshRenderer;
+
     public void OnPointerClick(PointerEventData eventData)
     {
         Debug.Log(point);
@@ -30,6 +34,8 @@ public class Ball : MonoBehaviour, IPointerClickHandler
     void OnValidate()
     {
         point = (int)color;
+        meshRenderer = GetComponent<MeshRenderer>();
+        meshRenderer.material = materials[point];
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -41,5 +47,13 @@ public class Ball : MonoBehaviour, IPointerClickHandler
     void Update()
     {
         
+    }
+
+    public void Color(BallColor ball)
+    {
+        color = ball;
+        point = (int)color;
+        meshRenderer = GetComponent<MeshRenderer>();
+        meshRenderer.material = materials[point];
     }
 }
