@@ -16,6 +16,7 @@ public class Ball : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField]
     private int point = 0;
+    public int Point {  get { return point; } set { point = value; } }
     
     [SerializeField]
     private BallColor color;
@@ -55,5 +56,10 @@ public class Ball : MonoBehaviour, IPointerClickHandler
         point = (int)color;
         meshRenderer = GetComponent<MeshRenderer>();
         meshRenderer.material = materials[point];
+    }
+
+    public int GetScore()
+    {
+        return point;
     }
 }

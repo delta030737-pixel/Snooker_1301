@@ -1,6 +1,7 @@
 using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -23,6 +24,12 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject ballLine;
 
+    [SerializeField]
+    private GameObject cam;
+
+    [SerializeField]
+    private TMP_Text notiText;
+
     public static GameManager instance;
 
     void Awake()
@@ -38,6 +45,8 @@ public class GameManager : MonoBehaviour
         Setball(BallColor.Blue, 5);
         Setball(BallColor.Pink, 6);
         Setball(BallColor.Black, 7);
+
+        CameraBehindQueBall();
     }
 
     void Update()
@@ -80,6 +89,10 @@ public class GameManager : MonoBehaviour
         Rigidbody rb = QueBall.GetComponent<Rigidbody>();
         rb.AddRelativeForce(Vector3.forward * 50, ForceMode.Impulse);
         ballLine.SetActive(false);
+
+        cam.transform.parent = null;
+        cam.transform.position = new Vector3(0f, 30f, -42f);
+        cam.transform.eulerAngles = new Vector3(45f, 0f, 0f);
     }
 
     private void RotateBall()
@@ -94,6 +107,20 @@ public class GameManager : MonoBehaviour
         rb.linearVelocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
         QueBall.transform.eulerAngles = new Vector3(0f, 0f, 0f);
+
         ballLine.SetActive(true);
+        CameraBehindQueBall();
     }
+
+    private void CameraBehindQueBall()
+    {
+        cam.transform.parent = QueBall.transform;
+        cam.transform.position = QueBall.transform.position + new Vector3(0f, 7f, -15f);
+        cam.transform.eulerAngles = new Vector3(30f, 0f, 0f);
+    }
+
+    public void ShowNotiText(string text)
+    {
+        notiText.text = text;
+    }    
 }
