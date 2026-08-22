@@ -123,4 +123,9 @@ public class GameManager : MonoBehaviour
     {
         notiText.text = text;
     }    
+
+    public void SetScore(int value)
+    {
+        playerScore = value;
+    }
 }

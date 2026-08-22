@@ -9,13 +9,13 @@ public class Hole : MonoBehaviour
         Ball b = other.GetComponent<Ball>();
 
         if (b == null) return;
-        int score = GameManager.instance.PlayerScore;
+        GameManager instance = GameManager.instance;
 
-        score += b.GetScore();
-        GameManager.instance.ShowNotiText($"Score : {score}");
+        instance.SetScore(instance.PlayerScore + b.GetScore());
+        GameManager.instance.ShowNotiText($"Score : {instance.PlayerScore}");
         if (b.GetScore() == 0)
         {
-            GameManager.instance.ShowNotiText($"Game Over\n Score : {score}");
+            GameManager.instance.ShowNotiText($"Game Over\n Score : {instance.PlayerScore}");
             Time.timeScale = 0f;
         }
         Destroy(other.gameObject);
